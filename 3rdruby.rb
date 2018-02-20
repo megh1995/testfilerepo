@@ -1,2 +1,9 @@
-File.new("simple_file.txt", "w+")
-File.delete("simple_file.txt")
+class Sample
+   def hello
+      puts "hello sir!"
+   end
+end
+
+# Now using above class to create objects
+object = Sample. new
+object.hello
