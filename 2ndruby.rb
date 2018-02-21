@@ -1,19 +1,16 @@
-print <<EOF
-   This is the first way of creating
-   here document ie. multiple line string.
-EOF
-print <<"EOF";                # same as above
-   This is the second way of creating
-   here document ie. multiple line string.
-EOF
+user = "Sammy"
+calories = 100
 
-print <<`EOC`                 # execute commands
-	echo hi there
-	echo lo there
-EOC
+print "Congratulations, " + user + "! You just burned " + calories.to_s + " calories during this workout.","\n"
 
-print <<"foo", <<"bar"  # you can stack them
-	I said foo.
-foo
-	I said bar.
-bar
+
+data = "Tiger,Great White,Hammerhead,Whale,Bullhead"
+
+# Convert data to an array by splitting on commas
+sharks = data.split(",")
+
+# Sort the sharks alpabetically
+sharks = sharks.sort!
+
+# Print out the sharks
+sharks.each{|shark|puts shark}

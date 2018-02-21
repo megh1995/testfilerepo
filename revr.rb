@@ -12,3 +12,9 @@ print a,"\n"
 
 d= 'yati'.reverse!
 puts d
+
+poem = "twinkle twinkle little star
+how i wonder what you are"
+print poem
+print poem.reverse
+puts poem.lines.to_a.reverse.join
