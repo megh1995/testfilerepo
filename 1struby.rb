@@ -7,8 +7,8 @@ b = "A string"
 c = 'Another String'
 print b + " and " + c + "\n"
 
-a=411.to_s.reverse!
+a=411.to_s.reverse
 print a,"\n"
 
-d= 'yati'.reverse!
-puts d
+d=gets.chomp.to_s
+puts d.reverse
